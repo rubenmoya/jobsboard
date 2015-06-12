@@ -9,7 +9,7 @@
   %body
     %nav.navbar.navbar-default
       .container
-        .navbar-brand Rails Jobs
+        = link_to "Rails Jobs", root_path, class: "navbar-brand"
         %ul.nav.navbar-nav
           %li= link_to "All the jobs", root_path
           - Category.all.each do |category|
